@@ -7,6 +7,7 @@ public class AddressBookMain {
         Scanner sc = new Scanner(System.in);
         HashMap<String, CreateContact> memberinfo = new HashMap<>();
         AddressBook functions = new AddressBook();
+
         do{
             System.out.println("Enter your Choice: ");
             System.out.println("1. Add Contact");
