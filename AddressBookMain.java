@@ -13,7 +13,8 @@ public class AddressBookMain {
             System.out.println("1. Add Contact");
             System.out.println("2. Edit Contact");
             System.out.println("3. Delete Contact");
-            System.out.println("4. Exit");
+            System.out.println("4. Add Multiple Contact");
+            System.out.println("5. Exit");
             i = sc.nextInt();
             sc.nextLine();
 
@@ -26,10 +27,13 @@ public class AddressBookMain {
             else if(i==3){
                 functions.deletecontact(memberinfo);
             }
+            else if(i==4){
+                functions.addmultiplecontact(memberinfo);
+            }
             else{
                 System.out.println("Invalid Option !!!");
             }
 
-        }while(i!=4);
+        }while(i!=5);
     }
 }
